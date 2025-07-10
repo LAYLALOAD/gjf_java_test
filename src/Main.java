@@ -3,9 +3,13 @@
 public class Main {
     public static void main(String[] args) {
 
-        //비교 연산자: ==, !=, >, <, >=, <=
-        int num = 5;
-        System.out.println(num == 5); // true
+        //논리 연산자: && (AND), || (OR), ! (NOT)
+        boolean result = (5 > 3) && (10 > 5); // true
+        System.out.println(result);
+
+//        //비교 연산자: ==, !=, >, <, >=, <=
+//        int num = 5;
+//        System.out.println(num == 5); // true
 
 //        //대입 연산자: =, +=, =, =, /=, %= 등
 //        int x = 5;
