@@ -3,15 +3,22 @@
 public class Main {
     public static void main(String[] args) {
 
-        //while 문: 조건이 참이면 계속 반복
-        int count = 3;
-        while (count > 0) {
-            System.out.println(count);
-            count--;
-        }
+        //do-while 문: 반복 후 조건 검사, 최소 1회 실행 보장
+        int num = 0;
+        do {
+            System.out.println(num);
+            num++;
+        } while (num < 3);
 
-//        //Java 반복문: 반복 횟수가 정해진 경우 사용
-//        //for 문
+//        //while 문: 조건이 참이면 계속 반복, 건만 명시, 반복 전에 조건 검사
+//        int count = 3;
+//        while (count > 0) {
+//            System.out.println(count);
+//            count--;
+//        }
+
+//        //Java 반복문
+//        //for 문: : 반복 횟수가 정해진 경우 사용,초기화, 조건식, 증감식을 한 줄에 작성
 //        for (int i = 0; i < 5; i++) {
 //            System.out.println(i);
 //        }
