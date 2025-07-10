@@ -3,10 +3,15 @@
 public class Main {
     public static void main(String[] args) {
 
-        //조건(삼항) 연산자: 조건식 ? 값1 : 값2
-        int score = 85;
-        String grade = (score >= 90) ? "A" : "B";
-        System.out.println(grade);
+        //비트 연산자: &, |, ^, ~, <<, >>, >>>
+        int n = 5; // 0101
+        int m = 3; // 0011
+        System.out.println(n & m); // 1 (0001)
+
+//        //조건(삼항) 연산자: 조건식 ? 값1 : 값2
+//        int score = 85;
+//        String grade = (score >= 90) ? "A" : "B";
+//        System.out.println(grade);
 
 //        //증감 연산자: ++, -
 //        int i = 1;
