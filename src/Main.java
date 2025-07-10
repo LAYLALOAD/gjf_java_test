@@ -3,10 +3,15 @@
 public class Main {
     public static void main(String[] args) {
 
-        //증감 연산자: ++, -
-        int i = 1;
-        i++; // i = 2
-        System.out.println(i);
+        //조건(삼항) 연산자: 조건식 ? 값1 : 값2
+        int score = 85;
+        String grade = (score >= 90) ? "A" : "B";
+        System.out.println(grade);
+
+//        //증감 연산자: ++, -
+//        int i = 1;
+//        i++; // i = 2
+//        System.out.println(i);
 
 //        //논리 연산자: && (AND), || (OR), ! (NOT)
 //        boolean result = (5 > 3) && (10 > 5); // true
