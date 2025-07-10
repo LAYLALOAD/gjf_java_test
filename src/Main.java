@@ -3,10 +3,21 @@
 public class Main {
     public static void main(String[] args) {
 
-        //비트 연산자: &, |, ^, ~, <<, >>, >>>
-        int n = 5; // 0101
-        int m = 3; // 0011
-        System.out.println(n & m); // 1 (0001)
+        //Java 조건문
+        //if 문
+        int num = 10;
+        if (num > 0) {
+            System.out.println("양수입니다.");
+        } else if (num == 0) {
+            System.out.println("0입니다.");
+        } else {
+            System.out.println("음수입니다.");
+        }
+
+//        //비트 연산자: &, |, ^, ~, <<, >>, >>>
+//        int n = 5; // 0101
+//        int m = 3; // 0011
+//        System.out.println(n & m); // 1 (0001)
 
 //        //조건(삼항) 연산자: 조건식 ? 값1 : 값2
 //        int score = 85;
