@@ -3,13 +3,20 @@
 public class Main {
     public static void main(String[] args) {
 
-        //Java 반복문
-        //for 문
-        for (int i = 0; i < 5; i++) {
-            System.out.println(i);
+        //while 문: 조건이 참이면 계속 반복
+        int count = 3;
+        while (count > 0) {
+            System.out.println(count);
+            count--;
         }
 
-//        //switch 문
+//        //Java 반복문: 반복 횟수가 정해진 경우 사용
+//        //for 문
+//        for (int i = 0; i < 5; i++) {
+//            System.out.println(i);
+//        }
+
+//        //switch 문: 값에 따라 여러 분기로 나눔, break 필수
 //        int day = 3;
 //        switch (day) {
 //            case 1:
@@ -27,7 +34,7 @@ public class Main {
 //        }
 
 //        //Java 조건문
-//        //if 문
+//        //if 문: 조건식의 결과에 따라 분기
 //        int num = 10;
 //        if (num > 0) {
 //            System.out.println("양수입니다.");
