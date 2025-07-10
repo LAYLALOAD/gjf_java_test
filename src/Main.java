@@ -3,22 +3,28 @@
 public class Main {
     public static void main(String[] args) {
 
-        //switch 문
-        int day = 3;
-        switch (day) {
-            case 1:
-                System.out.println("월요일");
-                break;
-            case 2:
-                System.out.println("화요일");
-                break;
-            case 3:
-                System.out.println("수요일");
-                break;
-            default:
-                System.out.println("기타 요일");
-                break;
+        //Java 반복문
+        //for 문
+        for (int i = 0; i < 5; i++) {
+            System.out.println(i);
         }
+
+//        //switch 문
+//        int day = 3;
+//        switch (day) {
+//            case 1:
+//                System.out.println("월요일");
+//                break;
+//            case 2:
+//                System.out.println("화요일");
+//                break;
+//            case 3:
+//                System.out.println("수요일");
+//                break;
+//            default:
+//                System.out.println("기타 요일");
+//                break;
+//        }
 
 //        //Java 조건문
 //        //if 문
