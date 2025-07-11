@@ -1,14 +1,29 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
+
+    //if문 반환형으로 수정
+    public static void ifTest() {
+        //Java 조건문
+        //if 문: 조건식의 결과에 따라 분기
+        int num = 10;
+        if (num > 0) {
+            System.out.println("양수입니다.");
+        } else if (num == 0) {
+            System.out.println("0입니다.");
+        } else {
+            System.out.println("음수입니다.");
+        }
+    }
+
     public static void main(String[] args) {
 
-        //do-while 문: 반복 후 조건 검사, 최소 1회 실행 보장
-        int num = 0;
-        do {
-            System.out.println(num);
-            num++;
-        } while (num < 3);
+//        //do-while 문: 반복 후 조건 검사, 최소 1회 실행 보장
+//        int num = 0;
+//        do {
+//            System.out.println(num);
+//            num++;
+//        } while (num < 3);
 
 //        //while 문: 조건이 참이면 계속 반복, 건만 명시, 반복 전에 조건 검사
 //        int count = 3;
@@ -40,16 +55,9 @@ public class Main {
 //                break;
 //        }
 
-//        //Java 조건문
-//        //if 문: 조건식의 결과에 따라 분기
-//        int num = 10;
-//        if (num > 0) {
-//            System.out.println("양수입니다.");
-//        } else if (num == 0) {
-//            System.out.println("0입니다.");
-//        } else {
-//            System.out.println("음수입니다.");
-//        }
+        //Java 조건문
+        //if 문: 조건식의 결과에 따라 분기 -> 호출
+        ifTest();
 
 //        //비트 연산자: &, |, ^, ~, <<, >>, >>>
 //        int n = 5; // 0101
