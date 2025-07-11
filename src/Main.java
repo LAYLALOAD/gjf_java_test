@@ -3,17 +3,21 @@
 public class Main {
 
     //if문 반환형으로 수정
-    public static void ifTest() {
+    public static String ifTest(int num) {
         //Java 조건문
         //if 문: 조건식의 결과에 따라 분기
-        int num = 10;
+
+        String str = "";
+
         if (num > 0) {
-            System.out.println("양수입니다.");
+            str = "양수";
         } else if (num == 0) {
-            System.out.println("0입니다.");
+            str = "0";
         } else {
-            System.out.println("음수입니다.");
+            str = "음수";
         }
+
+        return str;  //문자형 반환
     }
 
     public static void main(String[] args) {
@@ -57,7 +61,8 @@ public class Main {
 
         //Java 조건문
         //if 문: 조건식의 결과에 따라 분기 -> 호출
-        ifTest();
+        String str = ifTest(-1);
+        System.out.println(str + "입니다.");
 
 //        //비트 연산자: &, |, ^, ~, <<, >>, >>>
 //        int n = 5; // 0101
