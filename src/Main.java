@@ -3,9 +3,9 @@
 public class Main {
 
     //if문 반환형으로 수정
+    //Java 조건문
+    //if 문 예제
     public static String ifTest(int num) {
-        //Java 조건문
-        //if 문: 조건식의 결과에 따라 분기
 
         String str = "";
 
@@ -18,6 +18,29 @@ public class Main {
         }
 
         return str;  //문자형 반환
+    }
+
+    //switch 문 예제
+    public static String switchTest(int day) {
+
+        String weekdays = "";
+
+        switch (day) {
+            case 1:
+                weekdays = "월요일";
+                break;
+            case 2:
+                weekdays = "화요일";
+                break;
+            case 3:
+                weekdays = "수요일";
+                break;
+            default:
+                weekdays = "기타요일";
+                break;
+        }
+        return weekdays;
+
     }
 
     public static void main(String[] args) {
@@ -42,27 +65,12 @@ public class Main {
 //            System.out.println(i);
 //        }
 
-//        //switch 문: 값에 따라 여러 분기로 나눔, break 필수
-//        int day = 3;
-//        switch (day) {
-//            case 1:
-//                System.out.println("월요일");
-//                break;
-//            case 2:
-//                System.out.println("화요일");
-//                break;
-//            case 3:
-//                System.out.println("수요일");
-//                break;
-//            default:
-//                System.out.println("기타 요일");
-//                break;
-//        }
+        //switch 문: 값에 따라 여러 분기로 나눔, break 필수
+        System.out.println("switch문: " + switchTest(3) + " 입니다.");
 
         //Java 조건문
         //if 문: 조건식의 결과에 따라 분기 -> 호출
-        String str = ifTest(-1);
-        System.out.println(str + "입니다.");
+        System.out.println("if문: " + ifTest(-1) + " 입니다.");
 
 //        //비트 연산자: &, |, ^, ~, <<, >>, >>>
 //        int n = 5; // 0101
