@@ -38,6 +38,11 @@ public class Car {
         return this.year;
     }
 
+    // 기본 생성자: 클래스 이름에 반환자가 없는 구조 (가장 먼저 실행 되는 부분)
+    public Car() {
+        System.out.println("자동차 객체가 생성되었습니다.");
+    }
+
     // 메인 메서드
     public static void main(String[] args) {
         Car myCar = new Car();
