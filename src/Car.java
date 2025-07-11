@@ -1,16 +1,55 @@
 public class Car {
 
-    //메소드
+    private String brand;
+    private String model;
+    private int year;
 
-    //접근자 반환형 이름 : 이 메소드에 대해서 외부에서 접근을 혀용할지 안할지
-    public static int addCal(int a, int b) {
-        int sum = a + b; // a와 b를 더함
-        return sum; // 합계를 반환
-
+    public void move() {
+        System.out.println("자동차가 움직입니다.");
     }
 
+    public void stop() {
+        System.out.println("자동차가 멈춥니다.");
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public String getBrand() {
+        return this.brand;
+    }
+
+    // model 설정/조회
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public String getModel() {
+        return this.model;
+    }
+
+    // year 설정/조회
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public int getYear() {
+        return this.year;
+    }
+
+    // 메인 메서드
     public static void main(String[] args) {
-        int sum = addCal(3, 4);// 메소드 호출
-        System.out.println("합계: " +sum); // 결과 출력
+        Car myCar = new Car();
+        myCar.setBrand("현대");
+        myCar.setModel("쏘나타");
+        myCar.setYear(2022);
+
+        System.out.println("브랜드 " + myCar.getBrand());
+        System.out.println("모델: " + myCar.getModel());
+        System.out.println("연식: " + myCar.getYear());
+
+        myCar.move();
+        myCar.stop();
     }
 }
